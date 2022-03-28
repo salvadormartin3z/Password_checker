@@ -2,6 +2,7 @@ import requests
 import hashlib
 import sys
 
+# python Password_checker.py <password1> <password2> ...
 def request_api_data(query_char):
   url = 'https://api.pwnedpasswords.com/range/' + query_char
   res = requests.get(url)
